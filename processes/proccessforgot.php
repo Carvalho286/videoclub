@@ -6,7 +6,7 @@ session_start();
 //connexão à BD;
 $sname= "localhost";
 $unmae= "root";
-$password= "localhostMiguel";
+$password= "root";
 
 $db_name= "videoclub";
 

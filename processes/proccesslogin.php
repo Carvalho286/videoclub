@@ -4,7 +4,7 @@ session_start();
 //connexão à BD;
 $sname= "localhost";
 $unmae= "root";
-$password= "localhostMiguel";
+$password= "root";
 
 $db_name= "videoclub";
 
@@ -81,8 +81,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                             setcookie('password', $encryptedText, time()+(86400*30), "/");
                             setcookie('userLogin', $remember_check, time()+(86400*30), "/");
                         } else {
-                            setcookie('email', $email, time()+1);
-                            setcookie('password', $hashedPassword,  time()+1);
+                            setcookie('email', $email, 30);
+                            setcookie('password', $hashedPassword,  30);
                         }
                         header("Location: ../indexlogged.php");
                         exit();
@@ -103,8 +103,8 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                             setcookie('password', $encryptedText, time()+(86400*30), "/");
                             setcookie('userLogin', $remember_check, time()+(86400*30), "/");
                         } else {
-                            setcookie('email', $email, time()+1);
-                            setcookie('password', $hashedPassword,  time()+1);
+                            setcookie('email', $email, 30);
+                            setcookie('password', $hashedPassword,  30);
                         }
                         header("Location: ../indexadmin.php");
                         exit();

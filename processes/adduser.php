@@ -6,7 +6,7 @@ require '../PHPMailer-5.2-stable/PHPMailerAutoload.php';
 //connexão à BD;
 $sname= "localhost";
 $unmae= "root";
-$password= "localhostMiguel";
+$password= "root";
 
 $db_name= "videoclub";
 
